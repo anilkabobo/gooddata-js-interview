@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "@gooddata/react-components": "6.2.0",
+    "dayjs": "^1.8.29",
     "http-proxy-middleware": "0.19.1",
     "node-sass": "4.11.0",
     "react": "16.5.2",
     "react-dom": "16.5.2",
+    "react-redux": "^5.0.7",
     "react-scripts": "2.1.8"
   },
   "scripts": {
@@ -23,6 +25,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@testing-library/react": "^10.4.7",
     "cross-env": "6.0.3"
   }
 }

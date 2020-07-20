@@ -1,0 +1,63 @@
+{
+  "env": {
+      "browser": true,
+      "es6": true
+  },
+  "extends": ["plugin:react/recommended", "eslint:recommended"],
+  "globals": {
+      "after": false,
+      "afterEach": false,
+      "before": false,
+      "beforeEach": false,
+      "console": false,
+      "describe": false,
+      "it": false,
+      "module": false,
+      "process": false,
+      "require": false,
+      "window": false,
+      "faker": false,
+      "expect": false,
+      "jest": false
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+  },
+  "plugins": [
+      "react"
+  ],
+  "rules": {
+      "linebreak-style": [
+          "error",
+          "unix"
+      ],
+      "quotes": [
+          "error",
+          "single"
+      ],
+      "semi": [
+          "error",
+          "always"
+      ],
+      "comma-dangle": [
+          "error",
+          "never"
+      ],
+      "no-case-declarations": 0,
+      "indent": [2, 2, {"SwitchCase": 1}],
+      "react/no-unused-prop-types": 2,
+      "default-case": 0, // Required default case is nonsense.
+      "key-spacing": [2, { "beforeColon": false, "afterColon": true, "mode": "minimum" }],
+      "max-len": [2, { "code": 120, "ignoreComments": true }],
+      "newline-after-var": 2,
+      "newline-before-return": 2,
+      "no-debugger": 2,
+      "object-curly-spacing": ["error", "always"],
+      "no-trailing-spaces": 2
+  }
+}
